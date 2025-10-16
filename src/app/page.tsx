@@ -68,26 +68,174 @@ export default function Portfolio() {
       { name: 'GitHub', icon: 'github' },
       { name: 'Sentry', icon: 'sentry' },
       { name: 'Jest', icon: 'jest' },
+      { name: 'Expo', icon: 'expo' },
     ],
   };
 
-  const experiences = [
+
+  const workingExperiences = [
     {
-      role: 'Mobile App Developer & Full Stack Developer',
-      type: 'Tech Lead & Software Development',
-      duration: '9+ Years',
-      description: 'Versatile developer with expertise in both mobile and full-stack development, leading software projects from conception to completion. Experienced tech lead with a proven track record of guiding teams to success and delivering high-quality applications across multiple platforms.',
+      company: 'Think Digitally',
+      position: 'Sr. Software Engineer',
+      duration: 'Oct 2024 – July 2025',
+      location: 'Karachi Division, Sindh, Pakistan',
+      description: 'Led mobile app projects in Android and iOS, collaborating with cross-functional teams to deliver high-quality solutions.',
+      achievements: [
+        'Led mobile app projects in Android and iOS, collaborating with cross-functional teams to deliver high-quality solutions',
+        'Maintained mobile app projects in Android and iOS, ensuring seamless functionality and user experience',
+        'Developed new features and user interfaces from wireframe models to enhance app usability',
+        'Fixed bugs and performance issues promptly to optimize app performance',
+        'Deployed mobile apps to Google Play and App stores, expanding reach and increasing user engagement',
+      ],
+      technologies: ['React Native', 'Android', 'iOS', 'Google Play', 'App Store'],
+    },
+    {
+      company: 'Karta',
+      position: 'Full Stack Software Engineer',
+      duration: 'Jul 2022 – Sep 2024',
+      location: 'Sydney, Australia',
+      description: 'Developed core APIs and B2C web/mobile applications for Karta Gift Cards, ensuring customer needs were met at the center of all projects.',
+      achievements: [
+        'Developed core APIs and B2C web/mobile applications for Karta Gift Cards',
+        'Collaborated with cross-functional teams to identify bottlenecks, risks, and form contingency plans',
+        'Conducted functionality testing, debugging, and ensured up-to-date software documentation',
+        'Participated in agile ceremonies and supported team members',
+        'Contributed to creating a culture of performance and quality assurance',
+      ],
+      technologies: ['React Native', 'Node.js', 'APIs', 'B2C Applications', 'Agile'],
+    },
+    {
+      company: 'Changing Digital',
+      position: 'Full Stack Software Engineer',
+      duration: 'Sep 2021 – Nov 2022',
+      location: 'Great Chesterford, England, United Kingdom',
+      description: 'Maintained APIs and mobile app projects in Android and iOS, ensuring smooth functionality and user experience.',
+      achievements: [
+        'Maintained APIs and mobile app projects in Android and iOS',
+        'Developed new features and user interfaces from wireframe models',
+        'Fixed bugs and performance issues promptly to optimize app performance',
+        'Deployed mobile apps to Google Play and App stores',
+        'Enhanced app usability and reached wider audience',
+      ],
+      technologies: ['React Native', 'APIs', 'Android', 'iOS', 'Google Play', 'App Store'],
+    },
+    {
+      company: 'Genius Giant',
+      position: 'Sr. Software Engineer',
+      duration: 'Jan 2020 – Sep 2021',
+      location: 'Naga, Bicol Region, Philippines',
+      description: 'Led mobile app projects in Android and iOS, collaborating with cross-functional teams to deliver high-quality solutions.',
+      achievements: [
+        'Led mobile app projects in Android and iOS with cross-functional teams',
+        'Developed new features and user interfaces from wireframe models',
+        'Deployed mobile apps to Google Play and App stores',
+        'Met aggressive schedules using Agile/Scrum methodologies',
+        'Ensured seamless user experience across platforms',
+      ],
+      technologies: ['React Native', 'Android', 'iOS', 'Agile', 'Scrum', 'Google Play', 'App Store'],
+    },
+    {
+      company: 'Bald Puppies Solutions',
+      position: 'Full Stack Software Engineer',
+      duration: 'Jan 2019 – Jan 2020',
+      location: 'Naga, Bicol Region, Philippines',
+      description: 'Maintained and developed APIs and mobile app projects in Android and iOS, collaborating with cross-functional teams to deliver high-quality solutions.',
+      achievements: [
+        'Maintained and developed APIs and mobile app projects in Android and iOS',
+        'Integrated online payment solutions like PayPal, Dragonpay, and PayMongo',
+        'Enhanced user experience and drove revenue growth',
+        'Collaborated with cross-functional teams for high-quality solutions',
+        'Delivered comprehensive mobile and web applications',
+      ],
+      technologies: ['React Native', 'APIs', 'PayPal', 'Dragonpay', 'PayMongo', 'Android', 'iOS'],
+    },
+    {
+      company: 'SpotHop',
+      position: 'Software Engineer',
+      duration: 'Jan 2018 – Jan 2019',
+      location: 'New York, New York, United States',
+      description: 'Maintained mobile app projects in Android and iOS, ensuring smooth functionality and developing new features.',
+      achievements: [
+        'Maintained mobile app projects in Android and iOS',
+        'Developed new features and user interfaces from wireframe models',
+        'Fixed bugs and performance issues promptly',
+        'Deployed mobile apps to Google Play and App stores',
+        'Enhanced user experience and ensured widespread availability',
+      ],
+      technologies: ['React Native', 'Android', 'iOS', 'Google Play', 'App Store'],
+    },
+    {
+      company: 'Department of Information and Communications Technology - Philippines',
+      position: 'Software Engineer Intern',
+      duration: 'Jan 2018 – Jan 2019',
+      location: 'Quezon City, National Capital Region, Philippines',
+      description: 'Assisted in developing and maintaining web-based applications for government services.',
+      achievements: [
+        'Assisted in developing and maintaining web-based applications for government services',
+        'Collaborated with cross-functional teams to align software solutions with project requirements',
+        'Participated in testing and debugging software applications',
+        'Contributed to maintaining software documentation',
+        'Optimized databases for better performance',
+      ],
+      technologies: ['Web Development', 'Government Services', 'Database Optimization', 'Testing', 'Documentation'],
+    },
+  ];
+
+  const education = [
+    {
+      institution: 'University of Nueva Caceres',
+      degree: 'Bachelor\'s degree, Information Technology',
+      year: '2018',
+      location: 'Naga, Bicol Region, Philippines',
+      description: 'Comprehensive study of Information Technology covering software development, database management, networking, and system analysis.',
       highlights: [
-        'Tech Lead experience - Leading software development from scratch to MVP and production-ready solutions',
-        'Guiding development teams to success with best practices and mentorship',
-        'Working with international clients across London, Australia, Pakistan, US, and Canada',
-        'Building and deploying mobile apps (React Native) and full-stack web applications',
-        'Managing end-to-end project lifecycles including architecture, development, testing, and deployment',
-        'Collaborating with cross-functional global teams and stakeholders',
+        'Specialized in Software Engineering and Development',
+        'Completed coursework in Database Management Systems',
+        'Studied Computer Networks and System Administration',
+        'Gained foundation in Programming and Software Architecture',
+        'Developed problem-solving and analytical thinking skills',
       ],
     },
   ];
 
+  const recommendations = [
+    {
+      name: 'Anwar Gul',
+      position: 'Lead Software Engineer | MVPs Consultant',
+      company: 'Helping you launch in 4-weeks 🚀',
+      date: 'August 22, 2025',
+      relationship: 'Anwar managed Clifford directly',
+      review: 'My experience working with Clifford was a great one, as his lead I would recommend him any day for React Native. I was impressed by his hardworking attitude and creative solutions. He was the main guy that I was relying on.',
+      rating: 5,
+    },
+    {
+      name: 'Erny Marvin Dalire',
+      position: 'Software Developer',
+      company: 'Team Collaboration',
+      date: 'August 22, 2024',
+      relationship: 'Erny Marvin worked with Clifford on the same team',
+      review: 'I had the pleasure of working with Clifford on several React Native projects, and he consistently impressed me with his deep expertise, problem-solving abilities, and commitment to delivering high-quality work. Clifford is not only skilled at writing clean, efficient code, but he also excels at team collaboration. His positive attitude and dedication to continuous learning make him a standout developer and a valuable asset to any team.',
+      rating: 5,
+    },
+    {
+      name: 'Elli Justine Vistan',
+      position: 'QA Automation Specialist | Senior QA Test Lead | Consultant',
+      company: 'Electronics Engineer',
+      date: 'August 9, 2024',
+      relationship: 'Elli Justine worked with Clifford on the same team',
+      review: 'Clifford is an outstanding Full Stack Software Engineer who consistently delivers high-quality work. During his time at Karta Gift Cards, he played a key role in developing B2C web and mobile applications, as well as core APIs. His collaboration with various teams ensured projects were completed to a high standard. Clifford\'s technical skills in NestJS and C#, along with his commitment to continuous improvement, make him a valuable asset to any development team.',
+      rating: 5,
+    },
+    {
+      name: 'Aubrey Ivan Apungan',
+      position: 'Full-stack developer',
+      company: 'Team Collaboration',
+      date: 'August 9, 2024',
+      relationship: 'Aubrey Ivan worked with Clifford on the same team',
+      review: 'I highly recommend Clifford as a full-stack developer. His work on Ekata services has been exceptional, showcasing his strong technical skills in both front-end and back-end development. He consistently delivers high-quality solutions and approaches challenges with a proactive and detail-oriented mindset. Clifford is also a great team player, communicating clearly and collaborating effectively. His positive attitude and willingness to help others make him a valuable asset to any team. I am confident he will continue to excel in his career.',
+      rating: 5,
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
@@ -109,10 +257,10 @@ export default function Portfolio() {
             
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
-              {['Home', 'About', 'Skills', 'Experience', 'Contact'].map((item) => (
+              {['Home', 'About', 'Skills', 'Work History', 'Education', 'Recommendations', 'Contact'].map((item) => (
                 <a 
                   key={item}
-                  href={`#${item.toLowerCase()}`} 
+                  href={`#${item.toLowerCase().replace(' ', '-')}`} 
                   className="nav-link relative group"
                 >
                   <span className="text-gray-300 hover:text-blue-400 transition-colors">
@@ -141,10 +289,10 @@ export default function Portfolio() {
           {/* Mobile Menu */}
           {mobileMenuOpen && (
             <div className="md:hidden py-4 space-y-3 glass-panel rounded-lg mb-4 p-4">
-              {['Home', 'About', 'Skills', 'Experience', 'Contact'].map((item) => (
+              {['Home', 'About', 'Skills', 'Work History', 'Education', 'Recommendations', 'Contact'].map((item) => (
                 <a 
                   key={item}
-                  href={`#${item.toLowerCase()}`} 
+                  href={`#${item.toLowerCase().replace(' ', '-')}`} 
                   className="block text-gray-300 hover:text-blue-400 transition-colors py-2" 
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -201,8 +349,8 @@ export default function Portfolio() {
                   <span>Learn More</span>
                   <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </span>
-              </a>
-              <a 
+          </a>
+          <a
                 href="#contact" 
                 className="btn-outline group relative px-8 py-4 border-2 border-blue-500 text-blue-400 rounded-full font-semibold overflow-hidden"
               >
@@ -336,8 +484,7 @@ export default function Portfolio() {
                         unoptimized
                       />
                     </div>
-                    <div className="font-semibold text-sm text-gray-300 group-hover:text-blue-400 transition-colors">{skill.name}</div>
-                    <div className="h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mt-2 scale-x-0 group-hover:scale-x-100 transition-transform"></div>
+          <div className="font-semibold text-sm text-gray-300 group-hover:text-blue-400 transition-colors">{skill.name}</div>
                   </div>
                 ))}
               </div>
@@ -366,7 +513,6 @@ export default function Portfolio() {
                       />
                     </div>
                     <div className="font-semibold text-sm text-gray-300 group-hover:text-purple-400 transition-colors">{skill.name}</div>
-                    <div className="h-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full mt-2 scale-x-0 group-hover:scale-x-100 transition-transform"></div>
                   </div>
                 ))}
               </div>
@@ -395,7 +541,6 @@ export default function Portfolio() {
                       />
                     </div>
                     <div className="font-semibold text-sm text-gray-300 group-hover:text-cyan-400 transition-colors">{skill.name}</div>
-                    <div className="h-1 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-full mt-2 scale-x-0 group-hover:scale-x-100 transition-transform"></div>
                   </div>
                 ))}
               </div>
@@ -424,7 +569,6 @@ export default function Portfolio() {
                       />
                     </div>
                     <div className="font-semibold text-sm text-gray-300 group-hover:text-green-400 transition-colors">{skill.name}</div>
-                    <div className="h-1 bg-gradient-to-r from-green-600 to-emerald-600 rounded-full mt-2 scale-x-0 group-hover:scale-x-100 transition-transform"></div>
                   </div>
                 ))}
               </div>
@@ -433,46 +577,170 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Experience Section */}
-      <section id="experience" className="section-padding relative z-10">
+
+      {/* Working Experiences Section */}
+      <section id="work-history" className="section-padding relative z-10">
         <div className="max-w-7xl mx-auto">
           <h2 className="section-title text-4xl sm:text-5xl font-bold mb-12 text-center">
             <span className="text-blue-400 font-mono">&lt;</span>
-            <span className="gradient-text-glow">Experience</span>
+            <span className="gradient-text-glow">Working Experiences</span>
+            <span className="text-blue-400 font-mono">/&gt;</span>
+          </h2>
+          
+          <div className="max-w-6xl mx-auto">
+            <div className="glass-card rounded-2xl p-6 border border-blue-500/20">
+              <div className="h-[600px] overflow-y-auto scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-gray-800 pr-4">
+                <div className="space-y-6">
+                  {workingExperiences.map((work, index) => (
+                    <div 
+                      key={index}
+                      className="glass-panel rounded-xl p-6 border border-blue-500/10 hover:border-blue-500/30 transition-all duration-300"
+                    >
+                      <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                        <div>
+                          <h3 className="text-2xl font-bold text-blue-300 mb-1">{work.position}</h3>
+                          <p className="text-purple-400 font-semibold text-lg">{work.company}</p>
+                          <p className="text-gray-400 text-sm">{work.location}</p>
+                        </div>
+                        <span className="px-3 py-1 bg-blue-500/10 border border-blue-500/30 rounded-full text-blue-400 font-medium text-sm mt-2 md:mt-0">
+                          {work.duration}
+                        </span>
+                      </div>
+                      
+                      <p className="text-gray-300 mb-4 leading-relaxed">{work.description}</p>
+                      
+                      <div className="mb-4">
+                        <h4 className="text-blue-400 font-semibold mb-2">Key Achievements:</h4>
+                        <ul className="space-y-1">
+                          {work.achievements.map((achievement, idx) => (
+                            <li key={idx} className="flex items-center gap-2">
+                              <span className="text-blue-400 text-sm">▹</span>
+                              <span className="text-gray-300 text-sm">{achievement}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <h4 className="text-purple-400 font-semibold mb-2">Technologies Used:</h4>
+                        <div className="flex flex-wrap gap-2">
+                          {work.technologies.map((tech, idx) => (
+                            <span 
+                              key={idx}
+                              className="px-2 py-1 bg-black/50 text-gray-300 text-xs rounded-full border border-gray-700 hover:border-blue-500 hover:text-blue-400 transition-colors font-mono"
+                            >
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                  
+                  {workingExperiences.length === 0 && (
+                    <div className="text-center py-12">
+                      <p className="text-gray-400 text-lg">Please add your working experiences from your CV</p>
+                      <p className="text-gray-500 text-sm mt-2">Edit the workingExperiences array in the code</p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Education Section */}
+      <section id="education" className="section-padding relative z-10">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="section-title text-4xl sm:text-5xl font-bold mb-12 text-center">
+            <span className="text-blue-400 font-mono">&lt;</span>
+            <span className="gradient-text-glow">Education</span>
             <span className="text-blue-400 font-mono">/&gt;</span>
           </h2>
           
           <div className="max-w-5xl mx-auto">
-            {experiences.map((exp, index) => (
+            {education.map((edu, index) => (
               <div 
                 key={index}
                 className="glass-card rounded-2xl p-8 border border-blue-500/20 hover:border-blue-500/50 transition-all duration-300 hover-lift"
               >
-                <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
                   <div>
-                    <h3 className="text-3xl font-bold mb-2 text-blue-300">{exp.role}</h3>
-                    <p className="text-purple-400 font-semibold mb-2 font-mono text-lg">&gt;_ {exp.type}</p>
+                    <h3 className="text-3xl font-bold mb-2 text-blue-300">{edu.institution}</h3>
+                    <p className="text-purple-400 font-semibold text-xl mb-2">{edu.degree}</p>
+                    <p className="text-gray-400 text-lg">{edu.location}</p>
                   </div>
-                  <span className="px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-full text-blue-400 font-medium">
-                    {exp.duration}
+                  <span className="px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-full text-blue-400 font-medium text-lg mt-4 md:mt-0">
+                    {edu.year}
                   </span>
                 </div>
-                <p className="text-lg mb-6 text-gray-300 leading-relaxed">{exp.description}</p>
-                <div className="space-y-3">
-                  {exp.highlights.map((highlight, idx) => (
-                    <div key={idx} className="flex items-center gap-3 group">
-                      <span className="text-blue-400 group-hover:text-purple-400 transition-colors text-lg flex-shrink-0">▹</span>
-                      <span className="text-gray-300 group-hover:text-white transition-colors text-base">{highlight}</span>
-                    </div>
-                  ))}
+                
+                <p className="text-lg mb-6 text-gray-300 leading-relaxed">{edu.description}</p>
+                
+                <div>
+                  <h4 className="text-blue-400 font-semibold mb-4 text-xl">Key Areas of Study:</h4>
+                  <div className="space-y-2">
+                    {edu.highlights.map((highlight, idx) => (
+                      <div key={idx} className="flex items-center gap-3 group">
+                        <span className="text-blue-400 group-hover:text-purple-400 transition-colors text-lg flex-shrink-0">▹</span>
+                        <span className="text-gray-300 group-hover:text-white transition-colors text-base">{highlight}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
           </div>
-
         </div>
       </section>
 
+      {/* Recommendations Section */}
+      <section id="recommendations" className="section-padding relative z-10">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="section-title text-4xl sm:text-5xl font-bold mb-12 text-center">
+            <span className="text-blue-400 font-mono">&lt;</span>
+            <span className="gradient-text-glow">Recommendations</span>
+            <span className="text-blue-400 font-mono">/&gt;</span>
+          </h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {recommendations.map((rec, index) => (
+              <div 
+                key={index}
+                className="glass-card rounded-2xl p-8 border border-blue-500/20 hover:border-blue-500/50 transition-all duration-300 hover-lift"
+              >
+                <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold mb-2 text-blue-300">{rec.name}</h3>
+                    <p className="text-purple-400 font-semibold text-lg mb-1">{rec.position}</p>
+                    <p className="text-gray-400 text-base mb-2">{rec.company}</p>
+                    <p className="text-gray-500 text-sm">{rec.relationship}</p>
+                  </div>
+                  <div className="flex flex-col items-end mt-4 md:mt-0">
+                    <span className="px-3 py-1 bg-blue-500/10 border border-blue-500/30 rounded-full text-blue-400 font-medium text-sm mb-2">
+                      {rec.date}
+                    </span>
+                    <div className="flex items-center gap-1">
+                      {[...Array(rec.rating)].map((_, i) => (
+                        <span key={i} className="text-yellow-400 text-lg">★</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="relative">
+                  <div className="absolute -top-2 -left-2 text-6xl text-blue-500/20 font-serif">&ldquo;</div>
+                  <blockquote className="text-lg text-gray-300 leading-relaxed italic pl-6">
+                    {rec.review}
+                  </blockquote>
+                  <div className="absolute -bottom-2 -right-2 text-6xl text-blue-500/20 font-serif">&rdquo;</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Contact Section */}
       <section id="contact" className="section-padding relative z-10">

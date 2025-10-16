@@ -405,6 +405,21 @@
     background: linear-gradient(180deg, #2563eb, #7c3aed);
   }
 
+  /* Scrollbar for Work History */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+
+  .scrollbar-thumb-blue-500::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 6px;
+  }
+
+  .scrollbar-track-gray-800::-webkit-scrollbar-track {
+    background: #1f2937;
+    border-radius: 6px;
+  }
+
   /* Shimmer Effect */
   @keyframes shimmer {
     0% {
