@@ -77,7 +77,7 @@ export default function Portfolio() {
     {
       company: 'Think Digitally',
       position: 'Sr. Software Engineer',
-      duration: 'Oct 2024 – July 2025',
+      duration: 'Oct 2024 – August 2025',
       location: 'Karachi Division, Sindh, Pakistan',
       description: 'Led mobile app projects in Android and iOS, collaborating with cross-functional teams to deliver high-quality solutions.',
       achievements: [
@@ -250,9 +250,15 @@ export default function Portfolio() {
       <nav className="fixed top-0 w-full glass-nav z-50 border-b border-blue-500/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <a href="#home" className="text-2xl font-bold relative group">
-              <span className="gradient-text-glow">&lt;CF/&gt;</span>
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg blur opacity-0 group-hover:opacity-20 transition duration-300"></div>
+            <a href="#home" className="text-2xl font-bold">
+        <Image
+                src="/fordytech-logo.png"
+                alt="FordyTech Solutions Logo"
+                width={120}
+                height={40}
+                className="h-15 w-auto"
+                unoptimized
+              />
             </a>
             
             {/* Desktop Menu */}
@@ -326,15 +332,14 @@ export default function Portfolio() {
               <span className="wave-emoji">👋</span>
             </h1>
             
-            <div className="relative inline-block">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg blur opacity-30"></div>
-              <p className="relative text-xl sm:text-2xl lg:text-3xl mb-8 text-blue-300 font-mono glass-panel px-6 py-4 rounded-lg">
+            <div className="text-center mb-8">
+              <p className="text-xl sm:text-2xl lg:text-3xl text-blue-300 font-mono">
                 <span className="text-purple-400">&gt;_</span> Building Smarter, Faster MVPs with AI & React Native
               </p>
             </div>
             
             <p className="text-lg sm:text-xl mb-12 text-gray-400 max-w-3xl mx-auto">
-              <span className="text-blue-400 font-mono">const</span> experience = <span className="text-green-400">&quot;9+ Years&quot;</span>;
+               <span className="text-blue-400 font-mono">const</span> experience = <span className="text-green-400">&quot;10 Years&quot;</span>;
               <br />
               <span className="text-blue-400 font-mono">const</span> focus = <span className="text-green-400">&quot;AI-Accelerated Mobile Development&quot;</span>;
             </p>
@@ -380,72 +385,110 @@ export default function Portfolio() {
             <span className="text-blue-400 font-mono">/&gt;</span>
           </h2>
           
-          <div className="max-w-4xl mx-auto">
-            <div className="glass-card p-8 rounded-2xl border border-blue-500/20 hover-lift">
-              <div className="code-window mb-6">
-                <div className="flex gap-2 mb-4">
-                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                  <div className="w-3 h-3 rounded-full bg-green-500"></div>
+          <div className="max-w-6xl mx-auto">
+            {/* Profile Header */}
+            <div className="glass-card p-8 rounded-2xl border border-blue-500/20 hover:border-blue-500/50 transition-all duration-300 hover-lift mb-8">
+              <div className="flex flex-col lg:flex-row items-center gap-8">
+                <div className="flex-shrink-0">
+                  <div className="w-48 h-48 rounded-full overflow-hidden border-2 border-blue-500/30 shadow-2xl">
+                    <Image
+                      src="/face.png"
+                      alt="Clifford Francisco"
+                      width={192}
+                      height={192}
+                      className="w-full h-full object-cover"
+                      
+                    />
+                  </div>
                 </div>
-                <div className="font-mono text-sm space-y-2">
-                  <div><span className="text-purple-400">const</span> <span className="text-blue-400">developer</span> = {`{`}</div>
-                  <div className="ml-4"><span className="text-green-400">experience</span>: <span className="text-yellow-400">&quot;9+ years&quot;</span>,</div>
-                  <div className="ml-4"><span className="text-green-400">degree</span>: <span className="text-yellow-400">&quot;IT - Software Engineering&quot;</span>,</div>
-                  <div className="ml-4"><span className="text-green-400">specialization</span>: <span className="text-yellow-400">&quot;AI-Accelerated Mobile Apps&quot;</span>,</div>
-                  <div className="ml-4"><span className="text-green-400">platform</span>: <span className="text-yellow-400">&quot;React Native&quot;</span></div>
-                  <div>{`}`};</div>
+                <div className="flex-1 text-center lg:text-left">
+                  <h3 className="text-3xl font-bold mb-4 text-blue-300">Clifford Francisco</h3>
+                  <p className="text-xl text-purple-400 font-semibold mb-4">AI-Accelerated Mobile App Developer</p>
+                  <div className="code-window">
+                    <div className="flex gap-2 mb-4">
+                      <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                      <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                      <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <div className="font-mono text-sm space-y-2">
+                      <div><span className="text-purple-400">const</span> <span className="text-blue-400">developer</span> = {`{`}</div>
+                      <div className="ml-4"><span className="text-green-400">experience</span>: <span className="text-yellow-400">&quot;10 years&quot;</span>,</div>
+                      <div className="ml-4"><span className="text-green-400">degree</span>: <span className="text-yellow-400">&quot;IT - Software Engineering&quot;</span>,</div>
+                      <div className="ml-4"><span className="text-green-400">specialization</span>: <span className="text-yellow-400">&quot;AI-Accelerated Mobile Apps&quot;</span>,</div>
+                      <div className="ml-4"><span className="text-green-400">platform</span>: <span className="text-yellow-400">&quot;React Native&quot;</span></div>
+                      <div>{`}`};</div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              
-              <p className="text-lg mb-6 text-gray-300 leading-relaxed">
-                With over <span className="text-blue-400 font-semibold glow-text">9 years of software engineering experience</span> and a degree in Information Technology (Software Engineering), I specialize in building AI-accelerated mobile applications that transform ideas into scalable, real-world solutions.
-              </p>
-              <p className="text-lg mb-6 text-gray-300 leading-relaxed">
-                My core expertise lies in <span className="text-blue-400 font-semibold glow-text">React Native</span>, where I design and develop cross-platform apps for iOS and Android—from rapid AI-assisted MVPs to production-grade products across fintech, healthcare, and e-commerce industries.
-              </p>
-              <p className="text-lg mb-6 text-gray-300 leading-relaxed">
-                I leverage <span className="text-purple-400 font-semibold glow-text">AI coding tools and automation workflows</span> to accelerate development, enhance scalability, and deliver cleaner, more maintainable code—helping startups and teams ship faster and smarter.
-              </p>
-              <p className="text-lg mb-6 text-gray-300 leading-relaxed">
-                I&apos;ve collaborated with global teams and startup founders, contributing to product design, feature planning, and performance optimization. From integrating native modules, push notifications, and analytics, to publishing apps on the <span className="text-blue-400 font-semibold">App Store</span> and <span className="text-green-400 font-semibold">Google Play</span>, I deliver with precision and efficiency.
-              </p>
-              
-              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="glass-panel p-4 rounded-xl border-l-4 border-blue-500 hover-glow">
-                  <h3 className="font-bold text-xl mb-3 text-blue-400">💡 Core Strengths</h3>
-                  <ul className="space-y-2 text-gray-300">
-                    <li className="flex items-center gap-2">
-                      <span className="text-blue-400">▹</span> AI-Driven Development
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-blue-400">▹</span> Mobile App Development
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-blue-400">▹</span> API Integration
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-blue-400">▹</span> Cross-Platform Performance
-                    </li>
-                  </ul>
-                </div>
-                <div className="glass-panel p-4 rounded-xl border-l-4 border-purple-500 hover-glow">
-                  <h3 className="font-bold text-xl mb-3 text-purple-400">🎯 Approach</h3>
-                  <ul className="space-y-2 text-gray-300">
-                    <li className="flex items-center gap-2">
-                      <span className="text-purple-400">▹</span> Agile Practices
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-purple-400">▹</span> Clear Communication
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-purple-400">▹</span> Fast & Reliable Solutions
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-purple-400">▹</span> Scalable Architecture
-                    </li>
-                  </ul>
-                </div>
+            </div>
+
+            {/* About Content */}
+            <div className="glass-card p-8 rounded-2xl border border-blue-500/20 hover:border-blue-500/50 transition-all duration-300 hover-lift mb-8">
+              <h4 className="text-2xl font-bold mb-6 text-blue-400">About Me</h4>
+              <div className="space-y-6">
+                <p className="text-lg text-gray-300 leading-relaxed">
+                  With over <span className="text-blue-400 font-semibold glow-text">10 years of software engineering experience</span> and a degree in Information Technology (Software Engineering), I specialize in building AI-accelerated mobile applications that transform ideas into scalable, real-world solutions.
+                </p>
+                <p className="text-lg text-gray-300 leading-relaxed">
+                  My core expertise lies in <span className="text-blue-400 font-semibold glow-text">React Native</span>, where I design and develop cross-platform apps for iOS and Android—from rapid AI-assisted MVPs to production-grade products across fintech, healthcare, and e-commerce industries.
+                </p>
+                <p className="text-lg text-gray-300 leading-relaxed">
+                  I leverage <span className="text-purple-400 font-semibold glow-text">AI coding tools and automation workflows</span> to accelerate development, enhance scalability, and deliver cleaner, more maintainable code—helping startups and teams ship faster and smarter.
+                </p>
+                <p className="text-lg text-gray-300 leading-relaxed">
+                  I&apos;ve collaborated with global teams and startup founders, contributing to product design, feature planning, and performance optimization. From integrating native modules, push notifications, and analytics, to publishing apps on the <span className="text-blue-400 font-semibold">App Store</span> and <span className="text-green-400 font-semibold">Google Play</span>, I deliver with precision and efficiency.
+                </p>
+              </div>
+            </div>
+
+            {/* Strengths & Approach */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="glass-card p-8 rounded-2xl border border-blue-500/20 hover:border-blue-500/50 transition-all duration-300 hover-lift">
+                <h4 className="font-bold text-xl mb-6 text-blue-400 flex items-center gap-2">
+                  <span className="text-2xl">💡</span> Core Strengths
+                </h4>
+                <ul className="space-y-4 text-gray-300">
+                  <li className="flex items-center gap-3">
+                    <span className="text-blue-400 text-lg">▹</span> 
+                    <span>AI-Driven Development</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="text-blue-400 text-lg">▹</span> 
+                    <span>Mobile App Development</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="text-blue-400 text-lg">▹</span> 
+                    <span>API Integration</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="text-blue-400 text-lg">▹</span> 
+                    <span>Cross-Platform Performance</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="glass-card p-8 rounded-2xl border border-blue-500/20 hover:border-blue-500/50 transition-all duration-300 hover-lift">
+                <h4 className="font-bold text-xl mb-6 text-purple-400 flex items-center gap-2">
+                  <span className="text-2xl">🎯</span> Approach
+                </h4>
+                <ul className="space-y-4 text-gray-300">
+                  <li className="flex items-center gap-3">
+                    <span className="text-purple-400 text-lg">▹</span> 
+                    <span>Agile Practices</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="text-purple-400 text-lg">▹</span> 
+                    <span>Clear Communication</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="text-purple-400 text-lg">▹</span> 
+                    <span>Fast & Reliable Solutions</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="text-purple-400 text-lg">▹</span> 
+                    <span>Scalable Architecture</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -467,24 +510,24 @@ export default function Portfolio() {
               <h3 className="text-2xl font-bold mb-6 text-blue-400 font-mono flex items-center gap-2">
                 <span className="text-blue-500">{'{'}</span> Frontend Development <span className="text-blue-500">{'}'}</span>
               </h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3">
                 {skills.frontend.map((skill, index) => (
                   <div 
                     key={skill.name}
-                    className="skill-card-modern glass-card rounded-xl p-4 text-center border border-blue-500/20 hover:border-blue-500 transition-all duration-300 group"
-                    style={{ animationDelay: `${index * 50}ms` }}
+                    className="skill-card-modern glass-card rounded-lg p-3 text-center border border-blue-500/20 hover:border-blue-500 transition-all duration-300 group"
+                    style={{ animationDelay: `${index * 30}ms` }}
                   >
-                    <div className="flex justify-center mb-3 group-hover:scale-110 transition-transform">
+                    <div className="flex justify-center mb-2 group-hover:scale-110 transition-transform">
                       <Image 
                         src={`https://skillicons.dev/icons?i=${skill.icon}&theme=dark`} 
                         alt={skill.name}
-                        width={48}
-                        height={48}
-                        className="w-12 h-12"
+                        width={32}
+                        height={32}
+                        className="w-8 h-8"
                         unoptimized
                       />
                     </div>
-          <div className="font-semibold text-sm text-gray-300 group-hover:text-blue-400 transition-colors">{skill.name}</div>
+                    <div className="font-medium text-xs text-gray-300 group-hover:text-blue-400 transition-colors">{skill.name}</div>
                   </div>
                 ))}
               </div>
@@ -495,24 +538,24 @@ export default function Portfolio() {
               <h3 className="text-2xl font-bold mb-6 text-purple-400 font-mono flex items-center gap-2">
                 <span className="text-purple-500">{'{'}</span> Backend Development <span className="text-purple-500">{'}'}</span>
               </h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3">
                 {skills.backend.map((skill, index) => (
                   <div 
                     key={skill.name}
-                    className="skill-card-modern glass-card rounded-xl p-4 text-center border border-purple-500/20 hover:border-purple-500 transition-all duration-300 group"
-                    style={{ animationDelay: `${index * 50}ms` }}
+                    className="skill-card-modern glass-card rounded-lg p-3 text-center border border-purple-500/20 hover:border-purple-500 transition-all duration-300 group"
+                    style={{ animationDelay: `${index * 30}ms` }}
                   >
-                    <div className="flex justify-center mb-3 group-hover:scale-110 transition-transform">
+                    <div className="flex justify-center mb-2 group-hover:scale-110 transition-transform">
                       <Image 
                         src={`https://skillicons.dev/icons?i=${skill.icon}&theme=dark`} 
                         alt={skill.name}
-                        width={48}
-                        height={48}
-                        className="w-12 h-12"
+                        width={32}
+                        height={32}
+                        className="w-8 h-8"
                         unoptimized
                       />
                     </div>
-                    <div className="font-semibold text-sm text-gray-300 group-hover:text-purple-400 transition-colors">{skill.name}</div>
+                    <div className="font-medium text-xs text-gray-300 group-hover:text-purple-400 transition-colors">{skill.name}</div>
                   </div>
                 ))}
               </div>
@@ -523,24 +566,24 @@ export default function Portfolio() {
               <h3 className="text-2xl font-bold mb-6 text-cyan-400 font-mono flex items-center gap-2">
                 <span className="text-cyan-500">{'{'}</span> Databases <span className="text-cyan-500">{'}'}</span>
               </h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3">
                 {skills.databases.map((skill, index) => (
                   <div 
                     key={skill.name}
-                    className="skill-card-modern glass-card rounded-xl p-4 text-center border border-cyan-500/20 hover:border-cyan-500 transition-all duration-300 group"
-                    style={{ animationDelay: `${index * 50}ms` }}
+                    className="skill-card-modern glass-card rounded-lg p-3 text-center border border-cyan-500/20 hover:border-cyan-500 transition-all duration-300 group"
+                    style={{ animationDelay: `${index * 30}ms` }}
                   >
-                    <div className="flex justify-center mb-3 group-hover:scale-110 transition-transform">
+                    <div className="flex justify-center mb-2 group-hover:scale-110 transition-transform">
                       <Image 
                         src={`https://skillicons.dev/icons?i=${skill.icon}&theme=dark`} 
                         alt={skill.name}
-                        width={48}
-                        height={48}
-                        className="w-12 h-12"
+                        width={32}
+                        height={32}
+                        className="w-8 h-8"
                         unoptimized
                       />
                     </div>
-                    <div className="font-semibold text-sm text-gray-300 group-hover:text-cyan-400 transition-colors">{skill.name}</div>
+                    <div className="font-medium text-xs text-gray-300 group-hover:text-cyan-400 transition-colors">{skill.name}</div>
                   </div>
                 ))}
               </div>
@@ -551,24 +594,24 @@ export default function Portfolio() {
               <h3 className="text-2xl font-bold mb-6 text-green-400 font-mono flex items-center gap-2">
                 <span className="text-green-500">{'{'}</span> Tools & Platforms <span className="text-green-500">{'}'}</span>
               </h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3">
                 {skills.tools.map((skill, index) => (
                   <div 
                     key={skill.name}
-                    className="skill-card-modern glass-card rounded-xl p-4 text-center border border-green-500/20 hover:border-green-500 transition-all duration-300 group"
-                    style={{ animationDelay: `${index * 50}ms` }}
+                    className="skill-card-modern glass-card rounded-lg p-3 text-center border border-green-500/20 hover:border-green-500 transition-all duration-300 group"
+                    style={{ animationDelay: `${index * 30}ms` }}
                   >
-                    <div className="flex justify-center mb-3 group-hover:scale-110 transition-transform">
+                    <div className="flex justify-center mb-2 group-hover:scale-110 transition-transform">
                       <Image 
                         src={`https://skillicons.dev/icons?i=${skill.icon}&theme=dark`} 
                         alt={skill.name}
-                        width={48}
-                        height={48}
-                        className="w-12 h-12"
+                        width={32}
+                        height={32}
+                        className="w-8 h-8"
                         unoptimized
                       />
                     </div>
-                    <div className="font-semibold text-sm text-gray-300 group-hover:text-green-400 transition-colors">{skill.name}</div>
+                    <div className="font-medium text-xs text-gray-300 group-hover:text-green-400 transition-colors">{skill.name}</div>
                   </div>
                 ))}
               </div>
